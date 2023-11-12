@@ -1,0 +1,137 @@
+*{
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     text-decoration: none;
+}
+.container{
+     width: 1000px;
+     margin: auto;
+}
+/* class -2 styling */
+.header_area{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.header_area .logo {
+     width: 120px;
+     height: auto;
+ }
+.header_area .logo img {
+     width: 100%;
+ }
+.header_area .menu ul li {
+     display: inline-block;
+     position: relative;
+     margin-left: 10px;
+     background: #000;
+     color: #fff;
+     padding: 20px;
+ }
+ .header_area .menu ul li::after{
+     content: '';
+     position: absolute;
+     width: 0px;
+     background-color: red;
+     height: 2px;
+     transition: .5s ease;
+     left: 0;
+     bottom: 0;
+
+ }
+ .header_area .menu ul li:hover::after{
+     width: 100%;
+ }
+.header_area .menu ul li a{
+     color: #fff;
+     font-size: 16px;
+     font-family: 'poppins',sans-serif;
+     font-weight: 500;
+ }
+/* class-3 styling */
+.test .img{
+     width: 500px;
+    position: relative;
+    overflow: hidden;
+     display: block;
+}
+.test .img::after
+{
+     position: absolute;
+     content: '';
+     right: 0;
+     bottom: 5px;
+     width: 30px;
+     height: 30px;
+     transition: all 4s;
+     border-top-left-radius: 30px;
+     background-color: #000;
+     opacity: 0.3;
+     
+}
+.test .img:hover::after,
+.test .img:hover::before
+{
+     width: 100%;
+     height: 100%;
+     border-top-left-radius: 0;
+}
+.test .img::before
+{
+     position: absolute;
+     content: '';
+     top: 0;
+     left: 0;
+     width: 30px;
+     height: 30px;
+     transition: all 4s;
+     border-bottom-right-radius: 30px;
+     background-color: #000;
+     opacity: 0.5;
+     
+}
+
+.test .img img{
+     width: 100%; 
+}
+.test{
+     position: relative;
+}
+.test .demo{
+     position: absolute;
+     bottom: 0;
+     color: #fff;
+}
+.test-2 .bg_1{
+     width: 400px;
+     height: 450px;
+     background: red;
+}
+.test-2{
+     position: relative;
+}
+.text{
+     position: absolute;
+     bottom: 0;
+}
+.test .demo h2{
+     position: relative;
+     color: #fff;
+}
+.test .demo h2::after{
+     content: '';
+     position: absolute;
+     width: 0;
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     transition: all 1s ;
+     background-color: red;
+}
+.test .demo h2:hover::after{
+     width: 50%;
+}
+/* class-4 styling */
+
+    
