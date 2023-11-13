@@ -5,7 +5,8 @@
      text-decoration: none;
 }
 .container{
-     width: 1000px;
+     max-width: 1000px;
+     width: 100%;
      margin: auto;
 }
 /* class -2 styling */
@@ -133,5 +134,32 @@
      width: 50%;
 }
 /* class-4 styling */
+/* slider */
+.slider{
+     max-width: 100%;
+}
+.slider img{
+     width: 100%;
+}
+.text{
+     width: 50%;
+     float: left;
+}
+.links{
+     width: 50%;
+     float: right;
+}
+.links ul li{
+     border-bottom: 2px solid #ddd;
+     transition: all 1s ease;
+}
+.links ul li a{
+     color: #000;
+}
+.links ul li a:hover,
+.links ul li:hover{
+     color: red;
+     transform: translateX(5px);
+}
 
     
