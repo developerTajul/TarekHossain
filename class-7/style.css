@@ -27,6 +27,7 @@ ul{
 header{
      position: sticky;
      z-index: 100001;
+     /* box-shadow: 0 0.2px 20px rgba(0, 0, 0, 0.5); */
      top: 0;
      left: 0;
 }
@@ -40,7 +41,13 @@ header .header_area .header_wrapper{
      justify-content: space-between;
 }
 header .header_area .header_wrapper .logo{
-     
+     width: 100px;
+}
+header .header_area .header_wrapper .logo a{
+     width: 100%;
+     text-decoration: none;
+     color: #4272d7;
+     background: transparent;
 }
 header .header_area .header_wrapper .header_right .main_menu ul {
 
@@ -144,17 +151,19 @@ header .header_area .header_wrapper .header_right .search_icon i:hover{
      color: #4272d7;
 }
 header .header_area .header_wrapper .header_right .search_icon::before{
-     content: '|';
+     content: '';
      position: absolute;
      background-color: #ccc;
-     right: 45px;
+     right: 38px;
      height: 15px;
      width: 1px;
+     margin-top: 3px;
 }
 
 /* slider section */
 .slider_area{
      width: 100%;
+     z-index: 0;
      position: relative;
 }
 @keyframes animated {
@@ -190,16 +199,6 @@ header .header_area .header_wrapper .header_right .search_icon::before{
      background-color: #4272d7;
      display: inline-block;
 }
-
-/* swipper pagination btn */
-/* .owl-nav {
-     position: absolute;
-     background: #fff;
-     top: 50%;
- } */
- .owl-stage-outer .owl-nav button{
-    
- }
  .owl-nav i {
      position: absolute;
      /* background: #fff; */
