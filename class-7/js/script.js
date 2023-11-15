@@ -45,4 +45,19 @@
           }
       })
     })
+
+    // overlay
+    let close = document.querySelector('.close');
+    let overlay = document.querySelector('.overlay');
+    let search = document.querySelector('#search');
+    search.addEventListener('click',()=>{
+        overlay.classList.toggle('active');
+    });
+    close.addEventListener('click',()=>{
+        overlay.classList.remove('active');
+    });
+    window.onscroll = ()=>{
+        overlay.classList.remove('active');
+    }
+
   
