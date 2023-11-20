@@ -45,6 +45,50 @@
           }
       })
 
+    //   blog slider
+    $('.blog_wrapper').owlCarousel({
+        loop:true,
+          nav:true,
+          autoPlay:true,
+          lazyLoad:true,
+          autoplay:{
+            autoPlay:1000,
+            stopOnHover : false,
+            navText: ['<i class="fa-solid fa-arrow-right" id="next"></i>','<i class="fa-solid fa-arrow-left" id="prev"></i>'], 
+          },
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+    // company logo
+    $('.logo_wrapper').owlCarousel({
+        loop:true,
+          autoPlay:true,
+          margin:50,
+          autoplay:{
+            autoPlay:1000,
+          },
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:6
+            }
+        }
+    })
+
     //   video popup show
       $('.test-popup-link').magnificPopup({
         // if use like any video so use on type = iframe
@@ -107,3 +151,6 @@
         }
     })
   })
+
+//   blog slider section
+ 
