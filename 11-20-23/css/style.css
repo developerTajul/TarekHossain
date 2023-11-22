@@ -30,6 +30,9 @@ custom btn styling */
   font-family: 'poppins',sans-serif;
   border-radius: 30px;
 }
+.btn:hover{
+  border: 1px solid #505cfd;
+}
 
 body{
   font-family: 'Rubik', sans-serif;
@@ -173,6 +176,9 @@ header{
 .about-text p{
   margin-bottom: 45px;
 }
+.about-img img{
+  width: 100%;
+}
 /* about end*/
 /* area title */
 .area-title{}
@@ -235,5 +241,155 @@ header{
 }
 .service-wrapper button{}
 /* service end*/
+/* pricing */
+.pricing-area{background: #e7e8fe;}
+.pricing-wrapper{border: 1px solid #cfd1fc; transition: 1s;}
+.pricing-wrapper:hover{
+  background-color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0px 15px 30px 0px rgba(80, 92, 253, 0.1);
+}
+.pricint-item{
+  width: 25%;
+}
+
+.pricing-wrapper h3{
+  font-size: 22px;
+  padding: 40px 0;
+  margin: 0;
+  border-bottom: 1px solid #cfd1fc;
+}
+.pricing-wrapper span{font-size: 40px; font-weight: 600; line-height:1px; color: #505cfd; margin-top: 12px;display: inline-block;}
+.pricing-wrapper span > span{font-size: 20px; font-weight: 500; color: #505cfd; line-height: 23px; transform: translateY(-50%);padding-right: 5px;}
+.pricing-wrapper ul{margin: 40px 0;}
+.pricing-wrapper ul > li{line-height: 36px; color: #595959;}
+
+/* pricing end */
+/* counter */
+.counter-wrapper{}
+.counter-wrapper i{font-size: 30px; color: #fff; margin-bottom: 20px; display: block;}
+.counter-wrapper span{font-size: 32px;font-weight: 400;color: #fff;margin-bottom: 20px; display: block;}
+.counter-wrapper p{font-size: 15px; font-weight: 400;color: #fff;}
+/* counter end */
+/* team */
+.team-wrapper {
+  position: relative;
+}
+.team-img img{
+  width: 100%;
+}
+.team-img::before {
+  /* width: 100%; */
+  /* height: 100%; */
+  background: #fff;
+  /* top: 0; */
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  content: '';
+  top: 30px;
+  left: 30px;
+  transition: .5s;
+  bottom: 30px;
+  right: 30px;
+}
+.team-wrapper:hover .team-img::before{
+  opacity: 0.5;
+  visibility: visible;
+}
+.team-wrapper:hover .team-info{
+  visibility: visible;
+  opacity: 1;
+}
+.team-info {
+  position: absolute;
+  top: 50%;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+.team-info h3{
+  font-size: 22px;
+  color: #3f3f3f;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.team-info span{
+  font-size: 15px;
+  line-height: 25px;
+  color: #595959;
+  margin-bottom: 18px;
+}
+.team-info .slider-icon a{
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 26px;
+  color: #333;
+}
+/* team end */
+/* blog */
+.blog-content{margin-top: 25px;}
+.blog-content p{margin-bottom: 35px;}
+.blog-content h3 a{font-size: 22px;color: #444;
+}
+.blog-meta{margin-bottom: 20px;}
+.blog-meta .meta-line{width: 30px;height: 2px;background: #444;display: inline-block; position: relative;top: -2px;}
+.blog-meta span{font-size: 14px;color: #595959;}
+/* blog end*/
+/* testimonial */
+.testimonial-item{
+  background-color: #fdfdfe;
+  opacity: 0.7;
+  padding: 50px 217px;
+}
+.testimonial-item p{
+  font-size: 15px;
+  font-weight: 400;
+  color: #595959;
+}
+.testimonial-name{
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.testimonial-name h3{
+  font-size: 22px;
+  color: #505cfd;
+  line-height: 30px;
+  font-weight: 600;
+}
+.testimonial-name span{
+  font-size: 15px;
+  color: #595959;
+}
+/* carousel  */
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.testimonial-active{
+  position: relative;
+}
+.testimonial-active .slick-dots li{
+  display: inline-block;
+  margin-left: 30px;
+}
+.testimonial-active .slick-dots li.slick-active button{
+  background-color: #505cfd;
+}
+.testimonial-active .slick-dots li button{
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #505cfd;
+  border-radius: 50px;
+}
+
+/* testimonial end*/
+
 
 
