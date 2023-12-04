@@ -1,5 +1,29 @@
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width:767px) {  }
+@media (min-width: 576px) and (max-width:767px) { 
+      
+      .testimonial-item{
+        background-color: #fdfdfe;
+        opacity: 0.7;
+        padding: 50px 217px;
+        width: 100%;
+      }
+      
+      .testimonial-name{
+        display: block;
+        width: 100%;
+      }
+     
+      .header_area {
+        padding: 25px 75px;
+        border-image-slice: ce;     
+        }
+        .logo {
+            display: inline-block;
+            top: 100%;
+            position: relative;
+            transform: translateY(100%);
+        }
+ }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width:991px) {
@@ -22,18 +46,10 @@
       .slider-inner {
           padding-top: 36px;
       }
-      /* .about{
-          text-align: center;
-      }
-      .about-text h3::before {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          width: 50px;
-          height: 2px;
-          background-color: #505cfd;
-          left: 47%;
-      } */
+      .blog-thumb img {
+        width: 100%;
+    }
+     
  }
 
 /* // Extra large devices (large desktops, 1200px and up) */
