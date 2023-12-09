@@ -5,8 +5,8 @@ $(document).ready(function(){
           time: 1000
      });
      // magnific popup
-     $('.video-popup').magnificPopup({
-          type: 'image'
+     $('.popup-player').magnificPopup({
+          type: 'iframe'
           // other options
         });
 })
