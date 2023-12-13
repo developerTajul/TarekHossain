@@ -1,0 +1,61 @@
+.section-bg-1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../images/small/image2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 50%;
+    height: 100%;
+}
+body{
+    font-size: 17px;
+    font-size: 500;
+    color: #333;
+    line-height: 30px;
+}
+.styled-faq .card-header {
+   
+    border-bottom:0;
+}
+.styled-faq .accordion>.card {
+    border: 0;
+    box-shadow: 0 0 0 0;
+    margin-bottom: 10px;
+}
+.styled-faq .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+.styled-faq .btn:hover{
+    text-decoration: none;
+}
+.styled-faq .accordion>.card>.card-header h2 svg
+{
+    float: right;
+    line-height: 30px;
+    display: none;
+}
+.styled-faq .accordion>.card>.card-header h2 [aria-expanded = true] .fa-angle-down{
+    display: block;
+}
+.styled-faq .accordion>.card>.card-header h2 [aria-expanded = false] .fa-angle-up{
+    display: block;
+}
+h2.section-title {
+    font-size: 19px;
+    font-size: 700;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+h2.section-title span{
+    color: #4894e7;
+}
+.styled-faq .card-header h2 .btn {
+    font-size: 19px;
+    color: #333;
+    text-decoration: none;
+}
