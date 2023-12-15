@@ -73,7 +73,7 @@ header.sticky{
   z-index: 111111;
 }
 .header_area {
-  padding: 0 75px;
+  padding: 25px 75px;
 }
 .main_menu{}
 .main_menu ul{}
@@ -81,6 +81,8 @@ header.sticky{
   display: inline-block;
   margin-left: 55px;
 }
+/* logo */
+
 .main_menu ul li a{
   font-size: 14px;
   font-weight: 600;

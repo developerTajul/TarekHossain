@@ -11,20 +11,28 @@ $(document).ready(function(){
  
     // mobile menu
     $('#mobile_menu').meanmenu({
-        meanScreenWidth: "991",
-        meanMenuContainer: ".mobile-menu",
+        meanScreenWidth: 1017, // Set the screen width when the menu is triggered
+        meanMenuContainer: '.mobile-menu', // Specify the container for the mobile menu
+        meanRevealPosition: 'right', // Position of the menu (right, left, center)
     });
-     $('.slider-active').slick({
-      autoplay: true,
-      autoplaySpeed: 1000,
-      dots: false,
-      infinite: false,
-      speed: 1000,
-      arrows:false,
-      fade: true,
-      slide: 'div',
-      cssEase: 'linear'
-        });
+    $('.slider-active').owlCarousel({
+      loop:true,
+      autoplaySpeed:1000,
+      items:1,
+      nav:false,
+      autoplay:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:1
+          }
+      }
+  })
         // counter js
         $('.counter').counterUp({
           delay: 10,
@@ -115,10 +123,10 @@ $(document).ready(function(){
  // JavaScript to handle sticky behavior
  window.onscroll = function() {
   // Get the header
-  var header = document.querySelector('header');
+  let header = document.querySelector('header');
   
   // Add the "sticky" class to the header when scrolling down, remove it when scrolling up
-  if (window.pageYOffset > 50) {
+  if (window.pageYOffset > 100) {
     header.classList.add('sticky');
   } else {
     header.classList.remove('sticky');

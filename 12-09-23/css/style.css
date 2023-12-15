@@ -59,3 +59,23 @@ h2.section-title span{
     color: #333;
     text-decoration: none;
 }
+/* google map api */
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map {
+    height: 500px;
+    width: 400px;
+    float: left;
+  }
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }

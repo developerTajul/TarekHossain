@@ -1,5 +1,5 @@
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width:767px) { 
+@media (min-width: 376px) and (max-width:767px) { 
       
       .testimonial-item{
         background-color: #fdfdfe;
@@ -12,17 +12,21 @@
         display: block;
         width: 100%;
       }
+      /* .logo {
+        display: inline-block;
+        transform: translateY(87%);
+      } */
      
-      .header_area {
+      /* .header_area {
         padding: 25px 75px;
         border-image-slice: ce;     
-        }
-        .logo {
+        } */
+        /* .logo {
             display: inline-block;
             top: 100%;
             position: relative;
             transform: translateY(100%);
-        }
+        } */
  }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -43,9 +47,9 @@
       .slider-inner h2 {
           font-size: 24px;
       }
-      .slider-inner {
+      /* .slider-inner {
           padding-top: 36px;
-      }
+      } */
       .blog-thumb img {
         width: 100%;
     }

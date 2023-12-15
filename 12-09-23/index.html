@@ -116,9 +116,11 @@
                </div>
           </div>
      </section>
+
      <!-- pricing area section end-->
+     <div id="map"></div>
      <!-- jQuery -->
-     <script src="../12-09-23/js/jquery-1.12.1.min.js"></script>
+     <script src="../12-09-23/js/jquery-3.7.1.min.js"></script>
      <!-- elevatezoom -->
      <script src="../12-09-23/js/jquery.elevateZoom-3.0.8.min.js"></script>
      <!-- main heading js -->
@@ -135,7 +137,16 @@
      <script src="../12-09-23/js/jquery.counterup.min.js"></script>
      <!-- waypoints -->
      <!-- <script src="../12-09-23/js/jquery.waypoints.min.js"></script> -->
+     <!-- google map -->
+     <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
+     <!-- <script src="../12-09-23/js/google-map-apis-min.js"></script> -->
+     <!-- <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+          ({key: "AIzaSyAyxiLh-PumjJzIh9gnpQQ4AwK3Rf3S1Dc", v: "weekly"});</script>  -->
+    <!-- AIzaSyBDMH2CJOe9FUk_m79I-FFxqENeXWyiPTY -->
      <!-- custom js -->
+     
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyxiLh-PumjJzIh9gnpQQ4AwK3Rf3S1Dc&callback=initMap" async defer></script>
+     
      <script src="../12-09-23/js/index.js"></script>
 
 </body>
