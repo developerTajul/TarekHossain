@@ -30,20 +30,51 @@ $(document).ready(function(){
 
       // google map for bogura
      // Initialize and add the map
-     function initMap() {
-          let myLatLng = {lat: -25.363, lng: 131.044}; // Define your desired coordinates
-          let map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: myLatLng
-          });
+    //  function initMap() {
+    //       let myLatLng = {lat: -25.363, lng: 131.044}; // Define your desired coordinates
+    //       let map = new google.maps.Map(document.getElementById('map'), {
+    //         zoom: 4,
+    //         center: myLatLng
+    //       });
           
-          let marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            title: 'Marker Title'
-          });
-        }
-        
+    //       let marker = new google.maps.Marker({
+    //         position: myLatLng,
+    //         map: map,
+    //         title: 'Marker Title'
+    //       });
+    //     }
+// wow js
+        var wow = new WOW(
+          {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset:       0,          // distance to the element when triggering the animation (default is 0)
+            mobile:       true,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+            },
+            scrollContainer: null // optional scroll container selector, otherwise use window
+          }
+        );
+        wow.init();
+  // owl-carousel js
+        $('.staff-list').owlCarousel({
+          loop:true,
+          margin:10,
+          autoplay:true,
+          nav:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:4
+              },
+              1000:{
+                  items:4
+              }
+          }
+      })
      
 
     

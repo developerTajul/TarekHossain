@@ -1,0 +1,23 @@
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-border span {
+    text-align: center;
+    width: 40px;
+    height: 5px;
+    background: red;
+    display: inline-block;
+    /* float: right; */
+    /* margin: auto; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.section-border .black-border {
+    width: 30px;
+    background: black;
+    height: 5px;
+    margin: 0 20px;
+}
