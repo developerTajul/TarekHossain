@@ -53,10 +53,28 @@ $(document).ready(function(){
     //         }
     //     }
     // })
-    $('.homePage_slides').owlCarousel({
+    $('.brads-image').owlCarousel({
         loop:true,
         dots:false,
         autoplay:true,
+        nav:false,
+        // navtext:'<i class="fa-solid fa-arrow-right-long"></i><i class="fa-solid fa-arrow-left-long"></i>',
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:4
+            },
+            1000:{
+                items:6
+            }
+        }
+    })
+    $('.homePage_slides').owlCarousel({
+        loop:true,
+        dots:false,
+        autoplay:false,
         nav:true,
         navtext:'<i class="fa-solid fa-arrow-right-long"></i><i class="fa-solid fa-arrow-left-long"></i>',
         responsive:{
@@ -88,5 +106,19 @@ $(document).ready(function(){
                 items:1
             }
         }
+    })
+    // offcanvas
+    $('.menu-trigger').on('click',function(){
+        $('.offcanvas_menu,.overlay-bg-1').addClass('active')
+    })
+    $('.offcanvas_close,.overlay-bg-1').on('click',function(){
+        $('.offcanvas_menu,.overlay-bg-1').removeClass('active')
+    })
+    // search popup
+    $('.search-trigger').on('click',function(){
+        $('.overlay-search').addClass('active');
+    })
+    $('.overlay-search,.close-btn i').on('click',function(){
+        $('.overlay-search').removeClass('active');
     })
 })
