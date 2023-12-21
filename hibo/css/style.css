@@ -440,6 +440,42 @@
      padding-left: 36px;
      padding-right: 36px;
    }
+   .bg-1{
+    background-image: url('../../hibo/images/hero/hero-2\ -\ Copy.jpg');
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 300px;
+
+   }
+   .bg-1::after{
+      content: '';
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+      background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      width: 500px;
+      height: 100%;
+      position: relative;
+      z-index: 111111;
+   }
+   .card-content h4 {
+    margin: 0;
+}
+
+.card-content {
+    display: block;
+    height: 340px;
+}
+
+.card-item-wrap {
+    width: 100%;
+    /* height: 500px; */
+}
+
+
+
+
    .theme-btn.style-2,
    .wp-block-loginout a.style-2,
    input.theme-btn.style-2 {
@@ -485,6 +521,147 @@
      width: inherit !important;
      border: 0 !important;
    }
+   .footer-heading ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-heading ul li {
+    display: inline-block;
+    padding-left: 25px;
+}
+
+.footer-heading ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #31dfce;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+input[type="email"] {
+    border: 0;
+}
+
+input[type="email"] {
+    border-bottom: 2px solid #ddd;
+    padding: 10px 5px;
+    width: 67%;
+}
+
+
+
+form.footer-form button {
+    font-size: 17px;
+    padding: 10px 20px;
+    color: #31dfce;
+    border-radius: 5px;
+    /* float: right; */
+    /* width: 20%; */
+    display: inline-block;
+}
+.bg-1{
+  background-image: url('../images/hero/hero-2\ -\ Copy.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-one{
+    background-image: url('../images/hero/hero-2\ -\ Copy.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+.txt {
+  position: relative;
+  /* width: 100%; */
+  z-index: 2;
+}
+
+.pink_overlay {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  background: red;
+  top: 0;
+  z-index: -1;
+  /* content: ''; */
+  left: 0;
+  opacity: 0.4;
+}
+
+.pink_overlay {
+  /* position: relative; */
+  /* z-index: 2; */
+}
+
+section.sectoin-padding.bg-one {
+  position: relative;
+  z-index: 2;
+}
+
+.black_overlay {}
+
+.black_overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background: black;
+  opacity: .5;
+}
+.section-bg-1{
+  background-image: url('../images/hero/hero-2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.section-bg-overlay-1{
+  position: relative;
+  z-index: 2;
+}
+.section-bg-overlay-1::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .4;
+  background:#000;
+}
+.counter_wrap h4 {
+  color: #fff;
+  margin: 0;
+}
+span.count {
+  font-size: 29px;
+}
+
+.counter_wrap {
+  text-align: center;
+}
+
+.counter_wrap i {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+/* .card-img {
+  background-image: url('../images/blog/Image-3.jpg');
+} */
+.card-border{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 400px;
+}
    
    /* Deafult Margin & Padding */
    /*-- Margin Top --*/
