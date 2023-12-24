@@ -4,7 +4,7 @@
 // meanmenu
 $('#mobile-menu').meanmenu({
 	meanMenuContainer: '.mobile-menu',
-	meanScreenWidth: "992"
+	meanScreenWidth: "1500"
 });
 
 // One Page Nav
@@ -17,7 +17,7 @@ $('.main-menu nav ul').onePageNav({
 
 $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
-	if (scroll < 245) {
+	if (scroll < 40) {
 		$(".header-sticky").removeClass("sticky");
 	} else {
 		$(".header-sticky").addClass("sticky");
@@ -80,10 +80,10 @@ $('.owl-carousel').owlCarousel({
             items:1
         },
         767:{
-            items:3
+            items:1
         },
         992:{
-            items:5
+            items:1
         }
     }
 })
@@ -98,23 +98,34 @@ $('.popup-image').magnificPopup({
 });
 
 /* magnificPopup video view */
-$('.popup-video').magnificPopup({
+$('.video_popup').magnificPopup({
 	type: 'iframe'
 });
 
 
 // isotop
-$('.grid').imagesLoaded( function() {
-	// init Isotope
-	var $grid = $('.grid').isotope({
-	  itemSelector: '.grid-item',
-	  percentPosition: true,
-	  masonry: {
-		// use outer width of grid-sizer for columnWidth
-		columnWidth: '.grid-item',
-	  }
-	});
-});
+$('.product').isotope({
+	itemSelector: '.grid-item',
+	masonry: {
+	  columnWidth: 1,
+	  horizontalOrder: false
+	}
+   });
+// init Isotope
+	var grid = $('.product').isotope({
+	// options
+	itemSelector: '.grid-item',
+	masonry: {
+	  // use outer width of grid-sizer for columnWidth
+	  columnWidth: 1,
+	  horizontalOrder: false
+	}
+   	});
+   // filter items on button click
+   $('.filter-button-group').on( 'click', 'button', function() {
+	var filterValue = $(this).attr('data-filter');
+	grid.isotope({ filter: filterValue });
+   });
 
 // filter items on button click
 $('.portfolio-menu').on( 'click', 'button', function() {
@@ -140,12 +151,15 @@ $.scrollUp({
 	animation: 'fade', // Fade, slide, none
 	animationInSpeed: 200, // Animation in speed (ms)
 	animationOutSpeed: 200, // Animation out speed (ms)
-	scrollText: '<i class="icofont icofont-long-arrow-up"></i>', // Text for element
+	scrollText: '<i class="fa-solid fa-angle-up"></i>', // Text for element
 	activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
 });
 
 // WOW active
 new WOW().init();
-
+// data background
+$('[data-background]').each(function(){
+	$(this).css("background-image","url(" + $(this).attr("data-background") +")");
+})
 
 })(jQuery);
